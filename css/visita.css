@@ -1,0 +1,544 @@
+@import url('/letras/letrarobots.css');
+@import url('/letras/letrasfutura.css');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url('/css/transforma.css');
+
+:root {
+    --e-global-color-primary: #111111;
+    --e-global-color-secondary: #54595F;
+    --e-global-color-text: #7A7A7A;
+    --e-global-color-accent: #AA9463;
+    --e-global-color-0a34a52: #0000001A;
+    --e-global-color-cd985ac: #FFFFFF80;
+    --e-global-color-35777ec: #FFFFFFB3;
+    --e-global-color-7517d31: #11111180;
+    --e-global-color-c7d3f22: #111111B3;
+    --e-global-color-ab516dc: #FFFFFF1A;
+    --e-global-color-1bdf9e5: #AA9463;
+    --e-global-color-7fed0b3: #1111114D;
+    --e-global-color-e79b1d6: #11111166;
+    --e-global-color-413a6a8: #FBF8F3;
+    --e-global-furutabold-fond-family:"Futura PT Book";
+    --e-global-typography-primary-font-family: "Roboto";
+    --e-global-typography-primary-font-weight: 600;
+    --e-global-typography-secondary-font-family: "Roboto Slab";
+    --e-global-typography-secondary-font-weight: 400;
+    --e-global-typography-text-font-family: "Roboto";
+    --e-global-typography-text-font-weight: 400;
+    --e-global-typography-accent-font-family: "Roboto";
+    --e-global-typography-accent-font-weight: 500;
+}
+
+
+
+body {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #111111;
+    background-color:var(--e-global-color-413a6a8);
+     /* Tipo de letra */
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family:var(--e-global-typography-primary-font-family); /* Usa la fuente externa */
+}
+
+
+header{
+   width: 100%;
+   height: 100vh;
+   background-image: url(/img/241732962_349919106822524_5859057023089632703_nfull.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+   display: block;
+
+}
+#posiAboluta {
+    position: absolute;
+  
+    background-color: var(--color_plomo);
+    color: var(--color_negro);
+    width: 40%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, .2);
+    
+     
+    /* Coordenadas */
+    right: 380px;
+    bottom: 30px; /* top / bottom */
+    /* left / right */
+}
+
+#posiAboluta h2{
+
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: var(--color_blanco_opaco);
+}
+
+
+
+/* Enlazar con una fuente externa de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;900&display=swap');
+
+
+html {
+    /* Permite un desplazamiento suave del scroll de la página */
+    scroll-behavior: smooth;
+}
+
+
+/* Elimina el margen externo y espaciado interno predeterminado */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Selectores HTML */
+
+h1 {
+    font-size: 48px; /* Tamaño de la letra */ 
+    font-weight: 900; /* Grosor de la fuente */
+    letter-spacing: -2px; /* Espacio entre caracteres */
+    text-transform: capitalize; /* Muestra el texto en may, min, título */
+}
+
+h2 {
+    font-size: 40px; /* Tamaño de la letra */ 
+    font-weight: 200; /* Grosor de la fuente */
+    letter-spacing: -2px; /* Espacio entre caracteres */
+    text-transform: lowercase; /* Muestra el texto en may, min, título */
+}
+
+h3 {
+    font-family: var(--e-global-typography-secondary-font-family);
+    font-size: 30px; /* Tamaño de la letra */ 
+    font-weight: 700; /* Grosor de la fuente */
+    text-transform: uppercase; /* Muestra el texto en may, min, título */
+}
+
+img {
+    /* Elimina el espacio predeterminado que aparece debajo de las imágenes */
+    display: block;
+}
+
+h1, h2, h3 {
+    margin-bottom: 10px;
+}
+
+p {
+    
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+a {
+    color: var(--e-global-color-primary);
+    text-decoration: none;  /* Quita el subrayado */
+}
+
+.fila {
+    /* Permite que las cajas hijo directas se coloquen uno al lado del otro */
+    display: flex;
+
+    /* Truco: Quitamos el espacio interno de la primera y la última caja hijo */
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+
+
+.img-ajustar {
+    width: 100%; /* Ajusta al 100% del ancho de su caja padre */
+    height: auto; /* Cambia proporcionalmente la altura */
+}
+/* Selectores de tipo ID */
+#menu-superior {
+    background-color: var(--e-global-color-primary);
+    height: 50px;
+}
+
+
+#menu-superior a {
+   
+    font-family: var(--e-global-furutabold-fond-family);
+    font-size: .75rem;
+    font-weight: 500; 
+    padding: 15px 20px;
+    color: var(--e-global-color-35777ec);
+    transition: all 0.3s ease-in-out
+}
+
+#menu-superior a:hover {
+   
+    color: var(--e-global-color-secondary);
+}
+
+#menu-superior .fila {
+    justify-content: space-between;
+    
+}
+
+.menu-barra {
+    list-style-type: none;  /* Quita la viñeta del elemento de menú*/
+    display: flex; /* Coloca los elementos del menú uno al lado del otro */
+}
+
+.menu-barra a {
+    display: block; /* Trata a cada opción del menú como una caja (div) */
+}
+
+
+#cabecera{
+
+border-bottom-style: groove;
+
+
+
+}
+.cabecera-sticky {
+    /* Deja la caja pegada al realizar el scroll (según las coordenadas) */
+    position: sticky;
+    top: 0px;
+    left: 0px;
+   
+
+    /* Establece el orden de posicionamiento de la caja. */
+    z-index: 1000;
+}
+
+.contenedor {
+    /* Ancho máximo de las cajas contenedoras */
+    max-width: 1200px;
+    
+    /* Centrar horizontalmente las cajas contenedoras */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+#cabecera #logo {
+    width: 150px;
+}
+
+#cabecera #menu-principal a {
+    color: var(--e-global-color-413a6a8);
+    padding: 35px 20px;
+    border-bottom: solid 4px transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+#cabecera #menu-principal a:hover {
+    color: var(--e-global-color-secondary);
+    border-bottom: solid 4px var(--color1);
+
+    /* background-color: var(--color5);
+    border-radius: 5px 5px 0px 0px; */
+}
+
+#cabecera .fila {
+    justify-content: space-between;
+}
+
+
+
+
+#pie {
+    background-color: var(--e-global-color-413a6a8);
+    color: var(--e-global-color-primary);
+   
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+#pie p {
+    margin-bottom: 0;
+}
+
+#pie i {
+    color: var(--color5);
+}
+
+#pie .columna:nth-child(2) {
+    text-align: right;
+}
+
+#scroll-arriba {
+    background-color: var(--e-global-color-text);
+    color: var(--e-global-color-413a6a8);
+    border: solid 2px var(--e-global-color-413a6a8);
+    border-radius: 50%;
+
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 16px;
+
+    /* Posicionamiento y coordenadas */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    transition: all 0.5s ease-in-out;
+    opacity: 0;  /* Oculta el botón al cargar la página */
+}
+
+#scroll-arriba:hover {
+    background-color: var(--e-global-color-1bdf9e5);
+    color: var(--e-global-color-413a6a8);
+    transform: translateY(-5px);
+    box-shadow: -5px 10px 25px 0 rgba(24, 41, 64, 0.4) !important;
+}
+
+
+.columna {
+    /* Controla que todas las cajas hijo tengan el mismo ancho */
+    flex-basis: 0; /* Ancho mínimo de una caja */
+    flex-grow: 1; /* Establece proporcionalmente el mismo ancho para caja hijo */
+
+    /* Espaciado interno a la izquierda y derecha de cada caja */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.alinear-vertical {
+   
+    display: flex;
+    flex-direction: column; /* Elementos hijo en forma vertical */
+    justify-content: center; /* Alineación vertical al centro */
+}
+#contactanos-mapa {
+    position: relative;
+    width: 100%;
+    padding-top: 30%; /* Altura de la sección del mapa */
+}
+
+#contactanos-mapa iframe {
+    position: absolute;
+    /* Coordenadas */
+    top: 0px;
+    left: 0px;
+
+    /* Tamaño del mapa */
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+/* Responsive Web para el diseño en una tableta */
+@media screen and (max-width:850px) {
+    .contenedor {
+        max-width: 90%;
+    }
+
+    #valores .fila {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #valores .columna {
+        max-width: 30%;
+        flex-basis: 30%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+      
+    }
+
+   #menu-superior .fila {
+        flex-direction: column;
+        align-items: center;
+       
+        
+     
+    }
+
+    #cabecera .fila {
+        flex-direction: column;
+        align-items: center;
+      
+    }
+
+    #cabecera #menu-principal a {
+        padding: 8px 10px;
+        font-size: 0.9em;
+    }
+
+    #cabecera #menu-principal li:nth-child(1) {
+        display: none;
+    }
+
+    #posiAboluta {
+        width: 80%;
+        left: 10%;
+        padding: 15px;
+        font-size: 0.9em;
+    }
+
+    
+
+    #histore .fila {
+        flex-direction: column;
+    }
+
+    #histore-foto-descripcion {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #histore .columna-66 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    #eventosmus .fila {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #eventosmus .columna {
+        flex-basis: 45%;
+        max-width: 45%;
+        box-sizing: border-box;
+    }
+
+    #convenios .fila {
+        flex-direction: column;
+    }
+
+    #convenios .columna-50 {
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    #convenios .columna {
+        margin-bottom: 15px;
+    }
+
+    #campus .fila {
+        flex-direction: column-reverse;
+    }
+
+    #campus .columna-33 {
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-top: 0px;
+    }
+
+} /* Responsive Web para el diseño en una tableta */
+
+
+/* Responsive Web para el diseño en un celular */
+@media screen and (max-width:650px) {
+    .contenedor {
+        max-width: 95%;
+    }
+
+    #programas .fila {
+        flex-direction: column;
+    }
+
+    /* #banner-anuncio {
+        display: none;
+    } */
+
+    #banner {
+        position: static;
+    }
+
+    #posiAboluta {
+        
+        display: none;
+    }
+    
+
+    #pinturass .fila {
+        flex-direction: column;
+    }
+
+    #pinturass .columna {
+        margin-bottom: 10px;
+    }
+
+    #valores .columna {
+        max-width: 45%;
+        flex-basis: 45%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+
+    #pie .fila {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #eventosmus .fila {
+        flex-direction: column;
+    }
+    #eventosmus .columna {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    #eventosmus .columna img {
+        width: 80%;
+        margin: auto;
+    }
+
+    #cabecera .menu-barra {
+        flex-direction: column;
+    }
+
+    #cabecera #menu-principal {
+        width: 95%;
+    }
+
+    #cabecera .menu-barra li {
+        width: 100%;
+        text-align: center;
+    }
+
+    #cabecera #menu-principal a {
+        padding: 5px 0px;
+        border-bottom: solid 1px var(--color1);
+        transition: all 0.3s ease-in-out;
+      
+    }
+
+    #cabecera #menu-principal a:hover {
+        border-bottom: solid 2px var(--color2);
+        background-color: rgba(159, 173, 191, 0.8);
+    }
+
+    .espaciado {
+        /* padding-top: 245px; */
+        padding-top: 90px;
+    }
+
+    #menu-superior .menu-barra:nth-child(3) {
+        display: none;
+    }
+
+    #cabecera #logo img {
+        width: 60%;
+        margin: auto;
+    }
+
+    #menu-superior {
+        font-size: 0.7em;
+        
+    }
+    
+} /* Responsive Web para el diseño en un celular */ 

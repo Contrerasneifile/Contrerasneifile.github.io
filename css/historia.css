@@ -1,0 +1,70 @@
+/* Enlazar con una fuente externa de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;900&display=swap');
+
+/* Declarar las fuentes externas Dafont copiadas en el sitio Web */
+@font-face {
+    font-family: "goodtimes-regular";
+    src: url("../fuentes/good_times/good\ times\ rg.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "strasua-regular";
+    src: url("../fuentes/strasua/strasua.ttf") format("truetype");
+}
+
+html {
+    /* Permite un desplazamiento suave del scroll de la página */
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* Paleta de colores plantilla */
+    /* https://color.adobe.com/es/color%20theme_1-color-theme-19918761 */
+
+    /* Declarar variables para el uso de los colores de la paleta */
+    --color1:#3079D9;
+    --color2:#2A558C;
+    --color3:#182940;
+    --color4:#9FADBF;
+    --color5:#D0DFF2;
+    --color-blanco:#ffffff;
+    --color-negro:#000000;
+    --color-gris:#454545;
+}
+
+/* Elimina el margen externo y espaciado interno predeterminado */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+#trasladate-cabecera {
+    background-color: var(--color1);
+    color: var(--color-blanco);
+    padding: 45px 0px;
+}
+
+#trasladate-ventajas {
+    background-color: var(--color5);
+    color: var(--color3);
+}
+
+#trasladate-ventajas ul {
+    margin-left: 40px;
+    list-style-type: square; /* disc, circle, square */
+}
+
+
+#trasladate-ventajas ol {
+    margin-left: 40px;
+    list-style-type: lower-alpha;
+}
+
+
+.video-reponsive {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    height: auto;
+    background-color: var(--color-negro);
+}
